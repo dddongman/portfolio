@@ -22,11 +22,11 @@ setInterval(typing, 500)
 Type();
 
 var tl1 = new TimelineMax();
-tl1.to(".square", 1, {
-    x: -180, rotation: 90, delay: 1, transformOrigin: "100% 100%", repeat: -1
+tl1.to(".square", .5, {
+    x: -180, rotation: 90, delay: 1, repeatDelay: .5, transformOrigin: "100% 100%", repeat: -1
 })
 
 var tl2 = new TimelineMax();
-tl2.to(".triangle", 1, {
-    x: -208, rotation: 120, delay: 1, transformOrigin: "100% 100%", repeat: -1
+tl2.to(".triangle", .5, {
+    x: -208, rotation: 120, delay: 1, repeatDelay: 1, transformOrigin: "100% 100%", repeat: -1
 })

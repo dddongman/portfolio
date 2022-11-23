@@ -7,8 +7,20 @@
 
 body {
     font-family: 'Pretendard Variable';
+    text-align: center;
 }
-
+.title {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.name {
+    margin-bottom: 20px;
+}
 .loading {
     position: absolute;
     top: 50%;
@@ -45,10 +57,4 @@ body {
 }
 .dotdotdot {
     margin-left: 10px;
-}
-.name {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
