@@ -1,0 +1,63 @@
+section .main {
+    width: 100%;
+    height: 100%;
+}
+.main {
+    transition-property: opacity, visibility;
+    transition-duration: .5s;
+}
+.main-title {
+    position: absolute;
+    top: 50%;
+    left: -3px;
+    transform: translateY(-50%);
+    width: 1470px;
+}
+.main-title h1 {
+    font-size: 5.5rem;
+    font-weight: 800;
+    margin-left: 200px;
+    line-height: 8rem;
+}
+.carousel-wrap {
+    width: 1000px;
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border: 3px solid #000;
+    border-radius: 0 120px 120px 0;
+    background-color: #fff;
+}
+.carousel-text {
+    animation: spin 7s  ease infinite;
+    margin-right: 50px;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+.carousel-text img {
+    width: 80px;
+    margin-left: 20px;
+}
+.title-tri, .title-circ, .title-sqr {
+    display: flex;
+}
+.title-row1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@keyframes spin {
+	33.33% {
+		bottom: 128px;
+	}
+	66.66% {
+		bottom: 258px;
+	}
+    100% {
+        bottom: 0px;
+    }
+}

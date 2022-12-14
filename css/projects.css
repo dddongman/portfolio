@@ -1,0 +1,185 @@
+section .projects {
+    width: 100%;
+    height: 100%;
+}
+.projects {
+    transition-property: opacity, visibility;
+    transition-duration: .5s;
+}
+
+.projects h2 {
+    font-size: 6rem;
+    font-weight: 800;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+.projects ul {
+    width: 50%;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    text-align: right;
+    z-index: 3;
+}
+.projects li {
+    font-size: 3.5rem;
+    font-weight: 700;
+    width: 60%;
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 0 155px 155px 0;
+    margin: -3px 0 0 -3px;
+    padding: 40px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.projects li:hover {
+    background-color: #FFF972;
+    width: 75%;
+}
+.projects li.active {
+    background-color: #FFF972;
+    width: 75%;
+}
+.projects li.scoot {
+    margin-left: -200px;
+    background-color: #ffffff00;
+    pointer-events: none;
+}
+.projects-right {
+    width: 1400px;
+    height: 1400px;
+    background-color: #FFF972;
+    border: 3px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition-property: width, height, right;
+    transition-duration: .7s;
+}
+.projects-right.active {
+    width: 1600px;
+    height: 1600px;
+    z-index: 4;
+}
+.projects-right.pop {
+    right: -20%;
+}
+.project-preview img {
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    border: 3px solid #000;
+    transition: all .7s;
+}
+.projects-right.active .project-preview img {
+    top: 40%;
+}
+.project-desc {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .7s .7s;
+}
+.projects-right.active .project-desc {
+    visibility: visible;
+    opacity: 1;
+}
+.project-desc h3 {
+    font-size: 1.5rem;
+}
+.project-desc span {
+    display: block;
+    margin: 20px 0;
+}
+.project-desc p {
+    font-size: 1.2rem;
+    /* width: 65%; */
+}
+.project-desc-l {
+    width: 65%;
+}
+.project-desc-r {
+    display: flex;
+    flex-direction: column;
+}
+.project-desc-r button {
+    width: 100px;
+    height: 100px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 0 0 20px 50px;
+}
+.project-desc-r button a {
+    color: #fff;
+}
+
+.review {
+    width: 90%;
+    height: 90%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+    transition: all .7s;
+}
+.review.active {
+    left: 8%;
+}
+.review-content {
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.review-content img {
+    width: 600px;
+}
+.review-content p {
+    width: 550px;
+    margin-top: 30px;
+    line-height: 1.5rem;
+}
+.review-x {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    left: -10px;
+    top: 400px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.triangle.p {
+    top: 200px;
+    left: 330px;
+}
+.circle.p {
+    top: 450px;
+    left: 1600px;
+}
+.square.p {
+    top: 750px;
+    left: 700px;
+}

@@ -1,0 +1,46 @@
+.pre-loader {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+}
+.pre-loader-title {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.pre-loader-name {
+    margin-bottom: 20px;
+}
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 49.6%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.loading-triangle {
+    width: 0;
+    height: 0;
+    border-bottom: calc(104px * 1.732) solid #FF002E;
+    border-left: 104px solid transparent;
+    border-right: 104px solid transparent;
+}
+.loading-circle {
+    width: 180px;
+    height: 180px;
+    background-color: #FFF972;
+    border-radius: 50%;
+    margin: 0 90px 0 70px;
+}
+.loading-square {
+    width: 180px;
+    height: 180px;
+    background-color: #8CC1FF;
+}
